@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Breve - O Aplicativo que Vai Revolucionar Sua Produtividade</title>
+    <meta name="description" content="Prepare-se para o aplicativo que vai revolucionar sua produtividade. Simplifique suas tarefas, organize projetos e aumente sua eficiência.">
+    <meta name="keywords" content="produtividade, aplicativo, organização, tarefas, projetos">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <i class="fas fa-sun sun-icon"></i>
+        <i class="fas fa-moon moon-icon"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Header Section -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1 class="main-title">
+                    Prepare-se: O Aplicativo que Vai Revolucionar Sua Produtividade Chega em Breve!
+                </h1>
+                <p class="hero-description">
+                    Simplifique suas tarefas diárias, organize seus projetos e aumente sua eficiência como nunca antes.
+                </p>
+            </div>
+        </header>
+
+        <!-- Product Preview Section -->
+        <section class="product-preview">
+            <div class="mockup-container">
+                <div class="phone-mockup">
+                    <div class="screen">
+                        <div class="app-interface">
+                            <div class="app-header">
+                                <div class="status-bar"></div>
+                                <h3>ProductivityApp</h3>
+                            </div>
+                            <div class="app-content">
+                                <div class="task-item completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Reunião de equipe</span>
+                                </div>
+                                <div class="task-item">
+                                    <i class="far fa-circle"></i>
+                                    <span>Revisar relatório</span>
+                                </div>
+                                <div class="task-item">
+                                    <i class="far fa-circle"></i>
+                                    <span>Organizar documentos</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <p class="progress-text">75% concluído hoje</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section">
+            <h2 class="countdown-title">Lançamento em:</h2>
+            <div class="countdown-timer" id="countdown">
+                <div class="time-unit">
+                    <span class="time-value" id="days">00</span>
+                    <span class="time-label">Dias</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-label">Horas</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-label">Minutos</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Segundos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Email Signup Section -->
+        <section class="signup-section">
+            <div class="signup-container">
+                <h2 class="signup-title">Seja o primeiro a saber!</h2>
+                <p class="signup-description">
+                    Inscreva-se para receber notificações exclusivas sobre o lançamento e acesso antecipado.
+                </p>
+                
+                <form class="email-form" id="emailForm">
+                    <div class="input-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="Seu melhor e-mail"
+                            required
+                            aria-label="Endereço de e-mail"
+                        >
+                        <button type="submit" class="cta-button">
+                            <span class="button-text">Quero Ser Notificado!</span>
+                            <i class="fas fa-arrow-right button-icon"></i>
+                        </button>
+                    </div>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-section">
+            <h3 class="social-title">Siga-nos nas redes sociais</h3>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 ProductivityApp. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

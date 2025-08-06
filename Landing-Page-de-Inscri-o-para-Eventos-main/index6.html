@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar Gratuito: O Futuro da IA - Inscreva-se Agora!</title>
+    <meta name="description" content="Participe do nosso webinar gratuito sobre o futuro da Inteligência Artificial com especialistas renomados. Inscreva-se agora!">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Webinar</span>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="security-indicator">
+                        <i class="fas fa-lock"></i>
+                        <span>Seguro</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Webinar Gratuito: Desvende o Futuro da Inteligência Artificial com Especialistas!
+                </h1>
+                <p class="hero-subtitle">
+                    Descubra as últimas tendências e inovações em IA que irão transformar o futuro dos negócios e da sociedade
+                </p>
+                
+                <!-- Event Details -->
+                <div class="event-details">
+                    <div class="event-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <strong>Data:</strong>
+                            <span id="eventDate">15 de Agosto, 2025</span>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Horário:</strong>
+                            <span>19:00 - 21:00 (Horário de Brasília)</span>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>Formato:</strong>
+                            <span>Online - Transmissão ao vivo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="countdown-section">
+                    <h3>Inscrições encerram em:</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Dias</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Horas</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Minutos</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Segundos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#registration" class="btn btn-primary btn-large">
+                        <i class="fas fa-user-plus"></i>
+                        Inscrever-se Agora - É Gratuito!
+                    </a>
+                    <p class="cta-note">🔒 Inscrição 100% segura e gratuita</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="speakers">
+        <div class="container">
+            <h2 class="section-title">Conheça Nossos Especialistas</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="60" cy="60" r="60" fill="#4f46e5"/>
+                            <circle cx="60" cy="45" r="20" fill="white"/>
+                            <path d="M20 100 Q60 80 100 100 L100 120 L20 120 Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>Dr. Ana Silva</h3>
+                    <p class="speaker-title">Diretora de IA - TechCorp Brasil</p>
+                    <p class="speaker-bio">
+                        PhD em Inteligência Artificial pela USP, com mais de 15 anos de experiência em machine learning e deep learning. Pioneira em implementações de IA no setor financeiro brasileiro.
+                    </p>
+                    <div class="speaker-expertise">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">FinTech</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="60" cy="60" r="60" fill="#059669"/>
+                            <circle cx="60" cy="45" r="20" fill="white"/>
+                            <path d="M20 100 Q60 80 100 100 L100 120 L20 120 Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>Prof. Carlos Mendoza</h3>
+                    <p class="speaker-title">Pesquisador Sênior - Instituto de IA</p>
+                    <p class="speaker-bio">
+                        Mestre em Ciência da Computação e especialista em ética em IA. Consultor para grandes empresas sobre implementação responsável de inteligência artificial.
+                    </p>
+                    <div class="speaker-expertise">
+                        <span class="tag">Ética em IA</span>
+                        <span class="tag">Consultoria</span>
+                        <span class="tag">Pesquisa</span>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="60" cy="60" r="60" fill="#dc2626"/>
+                            <circle cx="60" cy="45" r="20" fill="white"/>
+                            <path d="M20 100 Q60 80 100 100 L100 120 L20 120 Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>Dra. Marina Costa</h3>
+                    <p class="speaker-title">CTO - InnovateAI Startup</p>
+                    <p class="speaker-bio">
+                        Empreendedora tech com 12 anos de experiência. Fundou 3 startups de IA bem-sucedidas e é mentora de programas de aceleração tecnológica no Brasil.
+                    </p>
+                    <div class="speaker-expertise">
+                        <span class="tag">Empreendedorismo</span>
+                        <span class="tag">Startups</span>
+                        <span class="tag">Inovação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda Section -->
+    <section class="agenda">
+        <div class="container">
+            <h2 class="section-title">Agenda do Webinar</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">19:00</div>
+                    <div class="timeline-content">
+                        <h3>Abertura e Boas-vindas</h3>
+                        <p>Apresentação dos palestrantes e overview do evento</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">19:15</div>
+                    <div class="timeline-content">
+                        <h3>O Estado Atual da IA no Brasil</h3>
+                        <p>Panorama do mercado brasileiro de inteligência artificial e principais tendências</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">19:35</div>
+                    <div class="timeline-content">
+                        <h3>Implementação Prática de IA nos Negócios</h3>
+                        <p>Cases de sucesso e estratégias para adoção de IA em diferentes setores</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">20:00</div>
+                    <div class="timeline-content">
+                        <h3>Ética e Responsabilidade em IA</h3>
+                        <p>Discussão sobre os desafios éticos e como desenvolver IA responsável</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">20:20</div>
+                    <div class="timeline-content">
+                        <h3>O Futuro da IA: Tendências para 2025-2030</h3>
+                        <p>Previsões e oportunidades emergentes no campo da inteligência artificial</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">20:45</div>
+                    <div class="timeline-content">
+                        <h3>Sessão de Perguntas e Respostas</h3>
+                        <p>Interação ao vivo com os especialistas e esclarecimento de dúvidas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Por que Participar?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Networking</h3>
+                    <p>Conecte-se com profissionais de IA, empreendedores e especialistas do setor</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Insights Exclusivos</h3>
+                    <p>Acesso a conhecimentos e estratégias que não são compartilhados publicamente</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificado de Participação</h3>
+                    <p>Receba um certificado oficial para adicionar ao seu currículo e LinkedIn</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Material Exclusivo</h3>
+                    <p>E-book gratuito com guia prático para implementar IA na sua empresa</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Gravação Disponível</h3>
+                    <p>Acesso à gravação do webinar por 7 dias após o evento</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Bônus Especiais</h3>
+                    <p>Templates e ferramentas práticas para começar sua jornada em IA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration" id="registration">
+        <div class="container">
+            <div class="registration-content">
+                <div class="registration-info">
+                    <h2>Garante Sua Vaga Agora!</h2>
+                    <p>O webinar é <strong>100% gratuito</strong> e as vagas são limitadas. Não perca essa oportunidade única de aprender com os maiores especialistas em IA do Brasil.</p>
+                    
+                    <div class="registration-benefits">
+                        <div class="reg-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Acesso gratuito e completo</span>
+                        </div>
+                        <div class="reg-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Certificado de participação</span>
+                        </div>
+                        <div class="reg-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Material exclusivo em PDF</span>
+                        </div>
+                        <div class="reg-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Gravação disponível por 7 dias</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="registration-form">
+                    <form id="registrationForm" class="form">
+                        <h3>Inscrição Gratuita</h3>
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Empresa (Opcional)</label>
+                            <input type="text" id="company" name="company" placeholder="Nome da sua empresa">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="role">Área de Atuação (Opcional)</label>
+                            <select id="role" name="role">
+                                <option value="">Selecione sua área</option>
+                                <option value="desenvolvimento">Desenvolvimento/Programação</option>
+                                <option value="gestao">Gestão/Liderança</option>
+                                <option value="marketing">Marketing/Vendas</option>
+                                <option value="consultoria">Consultoria</option>
+                                <option value="academico">Acadêmico/Pesquisa</option>
+                                <option value="estudante">Estudante</option>
+                                <option value="empreendedor">Empreendedor</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Concordo com os <a href="#" class="link">termos de uso</a> e <a href="#" class="link">política de privacidade</a>
+                            </label>
+                            <div class="error-message" id="privacyError"></div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Quero receber e-mails com conteúdos exclusivos sobre IA
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large btn-full" id="submitBtn">
+                            <i class="fas fa-user-plus"></i>
+                            Inscrever-se Agora - É Gratuito!
+                        </button>
+                        
+                        <div class="form-footer">
+                            <p><i class="fas fa-lock"></i> Seus dados estão seguros conosco</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-modal">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Inscrição Realizada com Sucesso!</h3>
+            <p>Você receberá um e-mail de confirmação em breve com os detalhes para acessar o webinar.</p>
+            <button class="btn btn-primary" id="closeSuccess">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre o Evento</h4>
+                    <p>Webinar gratuito sobre o futuro da Inteligência Artificial com especialistas renomados do mercado brasileiro.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@aiwebinar.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Webinar Brasil. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
